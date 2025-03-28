@@ -8,5 +8,5 @@ pdfplumber
 xlwings
 requests
 fitz  # PyMuPDF
-pptx
 google-generativeai
+python-pptx
