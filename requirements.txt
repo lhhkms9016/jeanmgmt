@@ -1,7 +1,6 @@
 streamlit
 Pillow
 pandas
-sqlite3
 plotly-express
 docx2txt
 PyPDF2
