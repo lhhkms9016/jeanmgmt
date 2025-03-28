@@ -77,7 +77,7 @@ def main():
         if st.session_state['table_names']:
             selected_table = st.selectbox("테이블 선택:", st.session_state['table_names'], key="table_selector1")
             default_query = f"SELECT * FROM {selected_table} LIMIT 10;"  # 선택한 테이블에 대한 기본 쿼리 생성
-            sql_query = st.text_area("SQL 쿼리 입력:", value=default_query)  # 기본 쿼리를 text_area에 표시
+            sql_query = st.text_area("SQL 쿼리 입력:", value=default_query, key="barchart1_sqlquery1")  # 기본 쿼리를 text_area에 표시
 
             if st.button("실행", key="barchart1_execute_button1"):
                 conn = connect_to_sqlite(db_file)
@@ -117,7 +117,7 @@ def main():
 
         else:
             selected_table = None
-            sql_query = st.text_area("SQL 쿼리 입력:", "SELECT * FROM table_name LIMIT 10;")
+            sql_query = st.text_area("SQL 쿼리 입력:", "SELECT * FROM table_name LIMIT 10;", key="barchart1_sqlquery2")
 
     else:
         st.write('SQLite 파일을 먼저 업로드해주세요.')
