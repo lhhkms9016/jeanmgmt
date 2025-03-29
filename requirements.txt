@@ -7,8 +7,6 @@ PyPDF2
 pdfplumber
 xlwings
 requests
-fitz
 PyMuPDF
 google-generativeai
 python-pptx
-frontend
