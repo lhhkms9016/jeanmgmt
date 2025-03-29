@@ -1,0 +1,12 @@
+streamlit
+Pillow
+pandas
+plotly-express
+docx2txt
+PyPDF2
+pdfplumber
+xlwings
+requests
+PyMuPDF
+google-generativeai
+python-pptx
